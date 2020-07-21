@@ -1,0 +1,46 @@
+/*index.html.erbの記述*/
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  width: 300px;
+  height: 100vh;
+  background-color: #253141;
+}
+
+.chat {
+  width: calc(100% - 300px);
+  background-color: #ffffff;
+}
+
+/*_side_bar.erbの記述*/
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+}
+
+.rooms {
+  height: calc(100Vh - 100px);
+  padding: 0 20px;
+  background-color: #2F3E51;
+}
+
+/*_main_chat.erbの記述*/
+.chat-header {
+  height: 100px;
+  padding: 0 40px;
+}
+
+.messages {
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  background-color: #FAFAFA;
+}
+
+.form {
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #DDDDDD;
+}
+
