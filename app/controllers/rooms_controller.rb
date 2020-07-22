@@ -1,10 +1,14 @@
 class RoomsController < ApplicationController
-#新規ルーム作成ページ
+  #チャットルーム一覧ページ（サイドバーのみ）
+  def index
+  end
+
+  #新規ルーム作成ページ
   def new
     @room = Room.new
   end
 
-#新規ルーム作成時のデータ保存
+  #新規ルーム作成時のデータ保存
   def create
     @room = Room.new(room_params)
     if @room.save
