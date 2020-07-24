@@ -20,7 +20,6 @@ class RoomsController < ApplicationController
 
   #チャットルームの削除
   def destroy
-    binding.pry
     room = Room.find(params[:id])
     room.destroy
     redirect_to root_path
